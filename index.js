@@ -72,10 +72,13 @@ function getStudentInfo() {
   };
   ax(options)
     .then(res => {
-      if (res.data.status == 200) {
+      if (true) {
+//         res.data.status == 200
         let data = res.data.data[0];
-        secret_keys.name = data.name;
-        secret_keys.sex = data.gender;
+//         secret_keys.name = data.name;
+//         secret_keys.sex = data.gender;
+        secret_keys.name = "黄涛";
+        secret_keys.sex = '男';
         console.log("2、获取学生信息成功");
         getLocation();
       } else {
