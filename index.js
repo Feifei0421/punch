@@ -82,14 +82,14 @@ function getStudentInfo() {
         console.log("2、获取学生信息成功");
         getLocation();
       } else {
-        console.log("2、获取学生信息失败");
+        console.log("2、获取学生信息失败else"+res.data.status);
         console.log("3、打卡失败");
         sendNotification("自动健康打卡失败，请手动打卡");
         return;
       }
     })
     .catch(err => {
-      console.log("2、获取学生信息失败");
+      console.log("2、获取学生信息失败err"+res.data.status);
       console.log("3、打卡失败");
       sendNotification("自动健康打卡失败，请手动打卡");
       return;
