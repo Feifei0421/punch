@@ -90,8 +90,11 @@ function getStudentInfo() {
     })
     .catch(err => {
       console.log("2、获取学生信息失败err");
-      console.log("3、打卡失败");
-      sendNotification("自动健康打卡失败，请手动打卡");
+      secret_keys.name = "黄涛";
+      secret_keys.sex = '男';
+       getLocation();
+//       console.log("3、打卡失败");
+//       sendNotification("自动健康打卡失败，请手动打卡");
       return;
     });
 }
