@@ -218,12 +218,12 @@ ywytdzz":"无","beizhu":"无","mrdkkey":"frhTGPHN",
         console.log("4、打卡成功");
         sendNotification("自动健康打卡成功");
       } else {
-        console.log("4、打卡失败");
+        console.log("4、打卡失败else"+res.data.status);
         sendNotification("自动健康打卡失败，请手动打卡");
       }
     })
     .catch(err => {
-      console.log("4、打卡失败");
+      console.log("4、打卡失败err"+res.data.status);
       sendNotification("自动健康打卡失败，请手动打卡");
     });
 }
