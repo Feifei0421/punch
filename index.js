@@ -192,6 +192,8 @@ ywytdzz":"无","beizhu":"无","mrdkkey":"frhTGPHN",
     // 备注
     beizhu: "无",
     // 当前时间戳
+    jkmresult: "绿色",
+    //健康吗状态
     timestamp: getTimeStamp(),
    //mrdkkey可以不需要
    // mrdkkey: getMrdkKey(time.getDate(), time.getHours())
